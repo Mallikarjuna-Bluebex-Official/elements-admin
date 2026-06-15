@@ -61,7 +61,7 @@ function App() {
           <Route path="/invoice-temp5/:bookingId" element={<Protected><InvoiceTemplate5 /></Protected>} />
 
           {/* Default redirect logic */}
-          <Route path="/" element={<Navigate to={isAuthenticated() ? "/dashboard" : "/login"} />} />
+          <Route path="/admin" element={<Navigate to={isAuthenticated() ? "/dashboard" : "/login"} />} />
         </Routes>
       </div>
     </Router>
