@@ -6,7 +6,7 @@ import dns from 'dns'
 dns.setDefaultResultOrder('ipv4first')
 
 export default defineConfig({
-  base: '/admin/',
+  base: '/admin',
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
